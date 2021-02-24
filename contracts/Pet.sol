@@ -1,7 +1,9 @@
-pragma solidity ^0.8.0;
+pragma solidity ^0.7.0;
 import '@openzeppelin/access/Ownable.sol';
 
 contract Pet is Ownable {
+
+   event PetAdded(uint id, string name);
 
    struct Pet {
       string name;
@@ -12,13 +14,24 @@ contract Pet is Ownable {
       string breed;
    }
 
-   Pet[] pubnlic pets;
+   Pet[] public pets;
    
 
-   function _addPet(string memory _name, uint _petId) internal {
+   function _addPet(string memory _name, uint _petId, string _breed) private {
+      require(_checkIdused(_petId));
+      pets.push(_name, _petId, msg.sender, false, '' , _breed);
+      emit PetAdded(_PetId, _name)
 
-     
    }
+
+   function _checkIdUsed(uint _petId) private {
+      require (uint.length == 15);  // TEST this 
+
+
+
+
+   }
+
 
 
 
