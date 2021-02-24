@@ -1,0 +1,25 @@
+{
+  "name": "pubpuppy",
+  "version": "1.0.0",
+  "description": "Some geezer trying to sell you 3 month old pure breed for £50 down the nags?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Scottburg/PubPuppy.git"
+  },
+  "author": "Scott Burgess",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Scottburg/PubPuppy/issues"
+  },
+  "homepage": "https://github.com/Scottburg/PubPuppy#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.4.0"
+  },
+  "devDependencies": {
+    "truffle": "^5.1.67"
+  }
+}
