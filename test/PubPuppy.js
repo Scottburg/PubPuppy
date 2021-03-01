@@ -11,8 +11,8 @@ contract('PetCreation', (accounts) => {
       'Wulf Hound',
       { from: alice }
     );
-    console.log(res);
+    console.log(res.logs);
     assert.equal(res.receipt.status, true);
-    // assert.equal(res.logs[0], true);
+    assert.equal(res.logs[0].args.name, 'barkDog');
   });
 });
